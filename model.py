@@ -20,7 +20,6 @@ class Model(nn.Module):
         if freeze_encoder:
             for param in vgg1.parameters():
                 param.requires_grad = False
-                print("this r param: ",param.requires_grad)
             for param in vgg2.parameters():
                 param.requires_grad = False
             for param in vgg3.parameters():
