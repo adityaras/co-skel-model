@@ -57,6 +57,8 @@ class LoadData(Dataset):
 #         print("out: ",targetImage.shape)
         
 #         return inputImage, targetImage,weights
+        print(ANIMOLS)
+        print(animol)
         return inputImage, targetImage,weights, np.array(ANIMOLS[animol]),self.frame.iloc[idx, 0]
 
 if __name__ == "__main__":
